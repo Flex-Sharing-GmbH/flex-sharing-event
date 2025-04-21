@@ -12,6 +12,7 @@ import Description from "@/components/Description";
 import Team from "@/components/Team";
 import Projects from "@/components/Projects";
 import Blog from "@/components/Blog";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -75,6 +76,7 @@ export default function Home() {
       <Team setCursorIsActive={setCursorIsActive} />
       {/* <Projects setCursorIsActive={setCursorIsActive} /> */}
       <Blog setCursorIsActive={setCursorIsActive} />
+      <Contact />
       <Footer />
     </main>
   );
