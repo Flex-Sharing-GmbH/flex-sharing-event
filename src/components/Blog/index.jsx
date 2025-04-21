@@ -1,0 +1,74 @@
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation, Autoplay } from "swiper/modules";
+import Image from "next/image";
+import "./style.css";
+import { FaInstagram } from "react-icons/fa";
+
+const images = [
+  "/images/intro.jpg",
+  "/images/intro.jpg",
+  "/images/intro.jpg",
+  "/images/intro.jpg",
+];
+
+export default function Index({ setCursorIsActive }) {
+  return (
+    <div className="w-full p-0 bg-white text-[#202020]">
+      <div className="py-20 flex flex-col items-center justify-center">
+        <div className="w-4/5">
+          <h1
+            onMouseEnter={() => setCursorIsActive(true)}
+            onMouseLeave={() => setCursorIsActive(false)}
+            className="text-5xl lg:text-5xl font-extrabold font-heading lg:mb-13 mb-10"
+          >
+            Aus unserem Alltag
+          </h1>
+        </div>
+
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          navigation
+          autoplay={{
+            delay: 3000,
+            pauseOnMouseEnter: true,
+            disableOnInteraction: false,
+          }}
+          spaceBetween={0}
+          slidesPerView={1}
+          loop={true}
+          className="w-4/5 mb-9"
+        >
+          {images.map((src, index) => (
+            <SwiperSlide key={index}>
+              <div className="relative w-full aspect-[16/9]">
+                <Image
+                  src={src}
+                  alt="Image"
+                  fill
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <a
+          className="inline-flex items-center text-xl gap-2 px-6 py-3 border border-[#202020] text-[#202020] font-semibold rounded-2xl hover:bg-[#202020] hover:text-white transition"
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          onMouseEnter={() => setCursorIsActive(true)}
+          onMouseLeave={() => setCursorIsActive(false)}
+        >
+          <FaInstagram className="text-xl" />
+          Folgt uns auf Instagram
+        </a>
+      </div>
+    </div>
+  );
+}
