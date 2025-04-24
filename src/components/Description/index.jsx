@@ -2,6 +2,7 @@ import styles from "./style.module.scss";
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 import { slideUp, opacity } from "./animation";
+import Link from "next/link";
 
 export default function Index({ setCursorIsActive }) {
   const phrase =
@@ -28,18 +29,19 @@ export default function Index({ setCursorIsActive }) {
           })}
         </p>
         <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>
-          Mit langjähriger Erfahrung und über 30
-          erfolgreich abgeschlossenen Projekten sind wir Ihr zuverlässiger
-          Partner.
+          Mit langjähriger Erfahrung und über 30 erfolgreich abgeschlossenen
+          Projekten sind wir Ihr zuverlässiger Partner.
         </motion.p>
         <div data-scroll data-scroll-speed={0.1}>
-          <div
-            onMouseEnter={() => setCursorIsActive(true)}
-            onMouseLeave={() => setCursorIsActive(false)}
-            className={styles.button}
-          >
-            <p>Alle Projekte</p>
-          </div>
+          <Link href="/projects">
+            <div
+              onMouseEnter={() => setCursorIsActive(true)}
+              onMouseLeave={() => setCursorIsActive(false)}
+              className={styles.button}
+            >
+              Alle Projekte
+            </div>
+          </Link>
         </div>
       </div>
     </div>
