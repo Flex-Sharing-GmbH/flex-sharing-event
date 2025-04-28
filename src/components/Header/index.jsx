@@ -31,7 +31,7 @@ export default function index({ setCursorIsActive }) {
   return (
     <div
       className={`${styles.header} ${
-        isActive ? "bg-[#151515]" : ""
+        isActive ? "bg-[#050505]" : ""
       } transition-colors duration-300`}
     >
       <div className={styles.bar}>

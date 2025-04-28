@@ -20,8 +20,10 @@ const Section1 = () => {
 const Section2 = () => {
   return (
     <div className="flex justify-between items-end">
-      <h1 className="text-[10vw] leading-[0.8] mt-10">Flex Sharing</h1>
-      <p>© Copyright by Flex Sharing</p>
+      <h1 className="text-[7vw] leading-[0.8] mt-10">
+        Flex Sharing Event
+      </h1>
+      <p>© Copyright by Flex Sharing GmBH</p>
     </div>
   );
 };
@@ -31,13 +33,13 @@ const Nav = () => {
     <div className="flex shrink-0 gap-20 font-bold text-[19px]">
       <div className="flex flex-col gap-2">
         <h3 className="mb-2 uppercase text-[#ffffff80]">Allgemein</h3>
-        <a href="#" className="hover:text-gray-400 transition-colors">
+        <a href="#leistungen" className="hover:text-gray-400 transition-colors">
           Über uns
         </a>
-        <a href="#" className="hover:text-gray-400 transition-colors">
+        <a href="#contact" className="hover:text-gray-400 transition-colors">
           Karriere
         </a>
-        <a href="#" className="hover:text-gray-400 transition-colors">
+        <a href="#blog" className="hover:text-gray-400 transition-colors">
           Projekte
         </a>
       </div>

@@ -53,26 +53,26 @@ export default function Index() {
     <section id="contact" className="w-full bg-white text-[#202020] py-20 px-6 md:px-24">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16">
         <div className="lg:w-1/2 flex flex-col justify-start">
-          <h2 className="text-5xl font-bold mb-4 leading-snug">
+          <h2 className="text-5xl font-bold mb-4">
             Nehmen Sie Kontakt mit uns auf
           </h2>
           <p className="mb-6 text-xl text-gray-700 leading-relaxed">
-            Rufen Sie uns an oder schicken Sie uns eine E-Mail. Wir melden uns
-            dann so schnell wie möglich zurück und beraten Sie ausführlich und
-            in aller Ruhe über Ihre Altbausanierung.
+            Rufen Sie uns an oder senden Sie uns eine E-Mail. 
+            Wir melden uns schnellstmöglich zurück und beraten 
+            Sie persönlich und kompetent rund um Ihre Veranstaltung
           </p>
 
           <div className="flex items-center gap-3 mb-3 text-xl font-medium">
             <FaPhone className="text-[#202020] w-5 h-5" />
-            030 200 089 - 180
+            +49 15679 624045
           </div>
           <div className="flex items-center gap-3 mb-3 text-xl font-medium">
             <FaEnvelope className="text-[#202020] w-5 h-5" />
-            info@tollundtoll.de
+            info@flex-sharing.de
           </div>
           <div className="flex items-center gap-3 text-xl font-medium">
             <FaMapMarkerAlt className="text-[#202020] w-5 h-5" />
-            Schwedenstr. 9, 13359 Berlin
+            Brunsbütteler Damm 112, 13581, Berlin
           </div>
         </div>
 

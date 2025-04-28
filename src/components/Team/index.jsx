@@ -22,8 +22,7 @@ export default function Index({ setCursorIsActive }) {
     >
       <div className="relative z-10 lg:p-20 py-20 px-5 mix-blend-difference text-white w-full h-full flex flex-col justify-between">
         <p className="lg:w-[50vw] lg:text-[2vw] text-[5.5vw] self-end uppercase mix-blend-difference">
-          Wir verstehen uns als professionellen, nachhaltigen und persönlichen
-          Dienstleister für den privaten Immobiliensektor im Großraum Berlin
+          Wir sind Ihr professioneller, nachhaltiger und persönlicher Partner für die Umsetzung unvergesslicher Events im Großraum Berlin
         </p>
         <p
           onMouseEnter={() => setCursorIsActive(true)}

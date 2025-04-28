@@ -51,6 +51,7 @@ export default function Index({ setCursorIsActive }) {
                   fill
                   style={{
                     objectFit: "cover",
+                    filter: "grayscale(100%) brightness(0.7)",
                   }}
                 />
               </div>

@@ -15,8 +15,11 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Flex Sharing",
-  description: "Sanierung, Renovierung, Tischlerarbeiten und Einfamilienhaus-Neubau – wir bieten maßgeschneiderte Bauleistungen mit höchstem Qualitätsanspruch",
+  title: "Flex Sharing Event",
+  description: 'Event- und Dienstleistungsagentur in Berlin',
+  icons: {
+    icon: '/images/logo.png',
+  },
 };
 
 export default function RootLayout({
