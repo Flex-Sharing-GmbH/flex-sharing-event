@@ -1,30 +1,32 @@
 "use client";
-import { FaTools, FaPaintRoller, FaCouch, FaHome } from "react-icons/fa";
+import {
+  FaHandsHelping,
+  FaMountain,
+  FaTruckLoading,
+  FaTools,
+} from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
-import { useState } from "react";
 
 const services = [
   {
+    icon: <FaHandsHelping size={70} />,
+    title: "STAGE HANDS",
+    description: "Hilfe beim Auf- und Abbau von Eventtechnik",
+  },
+  {
+    icon: <FaMountain size={70} />,
+    title: "KLETTERER",
+    description: "Höhenarbeiten bei Events und Installationen",
+  },
+  {
+    icon: <FaTruckLoading size={70} />,
+    title: "STAPLERFAHRER",
+    description: "Transport und Logistik bei Events",
+  },
+  {
     icon: <FaTools size={70} />,
-    title: "SANIERUNGSARBEITEN",
-    description:
-      "Umfassende Modernisierung und Wiederherstellung von Gebäuden.",
-  },
-  {
-    icon: <FaPaintRoller size={70} />,
-    title: "RENOVIERUNGSARBEITEN",
-    description: "Auffrischung und Erneuerung von Innen- und Außenbereichen.",
-  },
-  {
-    icon: <FaCouch size={70} />,
-    title: "TISCHLERARBEITEN",
-    description: "Maßgeschneiderte Holzarbeiten für Möbel und Innenausbau.",
-  },
-  {
-    icon: <FaHome size={70} />,
-    title: "EFH NEUBAU",
-    description:
-      "Planung und Bau von Einfamilienhäusern nach höchsten Standards.",
+    title: "MONTAGETEAMS",
+    description: "Professioneller Aufbau von Bühnen und Zelten",
   },
 ];
 

@@ -44,13 +44,13 @@ const Nav = () => {
 
       <div className="flex flex-col gap-2">
         <h3 className="mb-2 uppercase text-[#ffffff80]">Wichtige Links</h3>
-        <a href="#" className="hover:text-gray-400 transition-colors">
+        <a href="/impressum" className="hover:text-gray-400 transition-colors">
           Impressum
         </a>
-        <a href="#" className="hover:text-gray-400 transition-colors">
+        <a href="/datenschutz" className="hover:text-gray-400 transition-colors">
           Datenschutz
         </a>
-        <a href="#" className="hover:text-gray-400 transition-colors">
+        <a href="/agb" className="hover:text-gray-400 transition-colors">
           AGB
         </a>
       </div>
