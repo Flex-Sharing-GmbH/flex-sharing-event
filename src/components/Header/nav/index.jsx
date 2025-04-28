@@ -8,27 +8,23 @@ import Body from "./Body";
 const links = [
   {
     title: "Leistungen",
-    href: "/",
+    href: "leistungen",
   },
   {
     title: "Team",
-    href: "/",
-  },
-  {
-    title: "Karriere",
-    href: "/",
+    href: "team",
   },
   {
     title: "Blog",
-    href: "/",
+    href: "blog",
   },
   {
     title: "Contact",
-    href: "/",
+    href: "contact",
   },
 ];
 
-export default function Index({ setCursorIsActive }) {
+export default function Index({ setCursorIsActive, setMenuActive }) {
   const [selectedLink, setSelectedLink] = useState({
     isActive: false,
     index: 0,
@@ -49,6 +45,7 @@ export default function Index({ setCursorIsActive }) {
             selectedLink={selectedLink}
             setSelectedLink={setSelectedLink}
             setCursorIsActive={setCursorIsActive}
+            setMenuActive={setMenuActive}
           />
         </div>
       </div>

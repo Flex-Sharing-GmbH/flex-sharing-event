@@ -39,7 +39,8 @@ export default function Index({ setCursorIsActive }) {
   return (
     <div
       ref={ref}
-      className="w-full flex flex-col justify-center items-center pt-10 lg:pb-0 pb-6 bg-white text-[#202020]"
+      id="leistungen"
+      className="w-full flex flex-col justify-center items-center pt-10 lg:pb-10 pb-6 bg-white text-[#202020]"
     >
       <div className="flex lg:items-start items-center lg:justify-start justify-center w-4/5 max-w-4xl">
         <h1 className="py-4 px-6 text-5xl lg:text-5xl text-center font-extrabold font-heading lg:mb-13 mb-10">

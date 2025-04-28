@@ -50,7 +50,7 @@ export default function Index() {
   };
 
   return (
-    <section className="w-full bg-white text-[#202020] py-20 px-6 md:px-24">
+    <section id="contact" className="w-full bg-white text-[#202020] py-20 px-6 md:px-24">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16">
         <div className="lg:w-1/2 flex flex-col justify-start">
           <h2 className="text-5xl font-bold mb-4 leading-snug">

@@ -35,9 +35,9 @@ export default function index({ setCursorIsActive }) {
       } transition-colors duration-300`}
     >
       <div className={styles.bar}>
-        <Link href="/">
+        <Link href="/" className={styles.label}>
           <img
-            src="/images/logo.svg"
+            src="/images/logo.png"
             alt="Flex Sharing Logo"
             onMouseEnter={() => setCursorIsActive(true)}
             onMouseLeave={() => setCursorIsActive(false)}
@@ -80,7 +80,7 @@ export default function index({ setCursorIsActive }) {
         className={styles.background}
       ></motion.div>
       <AnimatePresence mode="wait">
-        {isActive && <Nav setCursorIsActive={setCursorIsActive} />}
+        {isActive && <Nav setCursorIsActive={setCursorIsActive} setMenuActive={setIsActive} />}
       </AnimatePresence>
     </div>
   );

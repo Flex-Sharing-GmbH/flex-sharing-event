@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Background from "../../../public/images/intro.jpg";
-import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
@@ -42,6 +42,7 @@ export default function Index({ setCursorIsActive }) {
             filter: "grayscale(100%) brightness(0.3)",
           }}
         />
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 to-black/10 pointer-events-none" />
       </motion.div>
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
         <motion.div
@@ -55,18 +56,21 @@ export default function Index({ setCursorIsActive }) {
             Wir sind Problemlöser
           </h1>
           <div className="flex flex-col justify-center items-center gap-6 mt-10">
-            <a className="px-6 py-3 border border-white text-white font-semibold rounded-2xl hover:bg-white hover:text-black transition">
+            <a
+              href="#contact"
+              className="px-6 py-3 border border-white text-white font-semibold rounded-2xl hover:bg-white hover:text-black transition"
+            >
               Kontaktieren Sie uns
             </a>
             <a
-              href="https://instagram.com"
+              href="https://wa.me/4917662813111"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3"
               onMouseEnter={() => setCursorIsActive(true)}
               onMouseLeave={() => setCursorIsActive(false)}
             >
-              <FaInstagram size={70} />
+              <FaWhatsapp size={70} />
             </a>
           </div>
         </motion.div>

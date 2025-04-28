@@ -8,6 +8,7 @@ export default function Body({
   selectedLink,
   setSelectedLink,
   setCursorIsActive,
+  setMenuActive,
 }) {
   const getChars = (word) => {
     let chars = [];
@@ -38,8 +39,17 @@ export default function Body({
       {links.map((link, index) => {
         const { title, href } = link;
         return (
-          <Link key={`l_${index}`} href={href}>
+          <Link key={`l_${index}`} href="/">
             <motion.p
+              onClick={() => {
+                setMenuActive(false);
+                setTimeout(() => {
+                  const target = document.getElementById(href); 
+                  if (target) {
+                    target.scrollIntoView({ behavior: "smooth" });
+                  }
+                }, 1000);
+              }}
               onMouseEnter={() => setCursorIsActive(true)}
               onMouseOver={() => {
                 setSelectedLink({ isActive: true, index });

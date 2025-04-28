@@ -16,6 +16,7 @@ export default function Index({ setCursorIsActive }) {
   return (
     <div
       ref={container}
+      id="team"
       className="relative flex items-center justify-center h-screen overflow-hidden"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >

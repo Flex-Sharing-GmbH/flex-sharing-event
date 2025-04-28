@@ -54,7 +54,7 @@ export default function Index() {
             transition={{ duration: 1 }}
           >
             <img
-              src="/images/logo.svg"
+              src="/images/logo.png"
               alt="Flex Sharing Logo"
               className="w-32 h-32"
             />

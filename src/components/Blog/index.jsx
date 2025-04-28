@@ -17,7 +17,7 @@ const images = [
 
 export default function Index({ setCursorIsActive }) {
   return (
-    <div className="w-full p-0 bg-white text-[#202020]">
+    <div id="blog" className="w-full p-0 bg-white text-[#202020]">
       <div className="py-20 flex flex-col items-center justify-center">
         <div className="w-4/5">
           <h1
@@ -57,6 +57,7 @@ export default function Index({ setCursorIsActive }) {
             </SwiperSlide>
           ))}
         </Swiper>
+        {/*
         <a
           className="inline-flex items-center text-xl gap-2 px-6 py-3 border border-[#202020] text-[#202020] font-semibold rounded-2xl hover:bg-[#202020] hover:text-white transition"
           href="https://www.instagram.com"
@@ -68,6 +69,7 @@ export default function Index({ setCursorIsActive }) {
           <FaInstagram className="text-xl" />
           Folgt uns auf Instagram
         </a>
+         */}
       </div>
     </div>
   );
