@@ -18,7 +18,7 @@ const images = [
 export default function Index({ setCursorIsActive }) {
   return (
     <div id="blog" className="w-full p-0 bg-white text-[#202020]">
-      <div className="py-20 flex flex-col items-center justify-center">
+      <div className="lg:py-20 py-10 flex flex-col items-center justify-center">
         <div className="w-4/5">
           <h1
             onMouseEnter={() => setCursorIsActive(true)}
