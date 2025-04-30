@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <section className="w-full bg-white lg:pb-30 pb-20 px-6 lg:px-24 text-[#202020]">
       <div className="max-w-5xl mx-auto">
-        <h1 className="rounded-lg text-4xl md:text-5xl font-extrabold font-heading mb-12">
+        <h1 className="rounded-lg text-4xl lg:text-5xl font-extrabold font-heading mb-12">
           Über uns und unsere Partner
         </h1>
         <p className="text-lg md:text-xl leading-relaxed mb-8">

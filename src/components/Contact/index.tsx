@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import '@ant-design/v5-patch-for-react-19';
+import { message } from 'antd';
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -26,8 +27,6 @@ export default function ContactForm() {
     resolver: zodResolver(formSchema),
   });
 
-  const [status, setStatus] = useState<"success" | "error" | null>(null);
-
   const onSubmit = async (data: FormData) => {
     try {
       const response = await fetch("/api/send", {
@@ -39,12 +38,11 @@ export default function ContactForm() {
       if (!response.ok) {
         throw new Error("Fehler beim Senden der Nachricht.");
       }
-
-      setStatus("success");
+      message.success("Nachricht wurde erfolgreich gesendet");
       reset();
     } catch (error) {
       console.error(error);
-      setStatus("error");
+      message.error("Fehler beim Senden. Bitte versuchen Sie es erneut.");
     }
   };
 
@@ -53,7 +51,7 @@ export default function ContactForm() {
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16">
         {/* Left */}
         <div className="lg:w-1/2 flex flex-col justify-start">
-          <h2 className="text-5xl font-bold mb-4">
+          <h2 className="text-4xl lg:text-5xl font-extrabold font-heading mb-4">
             Nehmen Sie Kontakt mit uns auf
           </h2>
           <p className="mb-6 text-xl text-gray-700 leading-relaxed">
@@ -77,7 +75,7 @@ export default function ContactForm() {
         </div>
 
         {/* Right: Form */}
-        <div className="lg:w-1/2">
+        <div id="contact" className="lg:w-1/2">
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#f9f9f9] p-8 rounded-3xl shadow-xl"
@@ -161,17 +159,6 @@ export default function ContactForm() {
                 {isSubmitting ? "Senden..." : "Nachricht senden"}
               </button>
             </div>
-
-            {status === "success" && (
-              <p className="md:col-span-2 text-center text-green-600 mt-2">
-                Ihre Nachricht wurde erfolgreich gesendet!
-              </p>
-            )}
-            {status === "error" && (
-              <p className="md:col-span-2 text-center text-red-600 mt-2">
-                Fehler beim Senden. Bitte versuchen Sie es erneut.
-              </p>
-            )}
           </form>
         </div>
       </div>
