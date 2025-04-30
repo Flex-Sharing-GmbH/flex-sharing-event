@@ -9,10 +9,10 @@ import "./style.css";
 import { FaInstagram } from "react-icons/fa";
 
 const images = [
-  "/images/intro.jpg",
-  "/images/intro.jpg",
-  "/images/intro.jpg",
-  "/images/intro.jpg",
+  "/images/blog/1.jpg",
+  "/images/blog/2.jpg",
+  "/images/blog/3.jpg",
+  "/images/blog/4.jpg",
 ];
 
 export default function Index({ setCursorIsActive }) {
@@ -33,8 +33,8 @@ export default function Index({ setCursorIsActive }) {
           modules={[Navigation, Autoplay]}
           navigation
           autoplay={{
-            delay: 3000,
-            pauseOnMouseEnter: true,
+            delay: 4000,
+            pauseOnMouseEnter: false,
             disableOnInteraction: false,
           }}
           spaceBetween={0}

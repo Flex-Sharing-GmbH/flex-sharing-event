@@ -23,14 +23,14 @@ const Section2 = () => {
       <h1 className="text-[7vw] leading-[0.8] mt-10">
         Flex Sharing Event
       </h1>
-      <p>© Copyright by Flex Sharing GmBH</p>
+      <p>© Copyright by Flex Sharing GmbH</p>
     </div>
   );
 };
 
 const Nav = () => {
   return (
-    <div className="flex shrink-0 gap-20 font-bold text-[19px]">
+    <div className="flex shrink-0 gap-20 font-bold text-center text-[19px]">
       <div className="flex flex-col gap-2">
         <h3 className="mb-2 uppercase text-[#ffffff80]">Allgemein</h3>
         <a href="#leistungen" className="hover:text-gray-400 transition-colors">

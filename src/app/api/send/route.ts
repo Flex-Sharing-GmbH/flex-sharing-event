@@ -9,7 +9,7 @@ export async function POST(req: Request) {
     const { firstName, lastName, email, phone, message } = await req.json();
 
     const { data, error } = await resend.emails.send({
-      from: "Contact <onboarding@resend.dev>",
+      from: '"📨 Flex Sharing Event" <onboarding@resend.dev>',
       to: "info@flex-sharing.de",
       subject: "New Contact Form Submission",
       react: EmailTemplate({

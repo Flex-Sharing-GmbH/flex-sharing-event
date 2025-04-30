@@ -15,33 +15,54 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     phone,
     message,
 }) => (
-    <div style={{
-        fontFamily: 'system-ui, -apple-system, sans-serif',
-        lineHeight: '1.5',
-        color: '#333',
-        backgroundColor: '#f9f9f9',
-        padding: '24px',
-        borderRadius: '8px',
-        maxWidth: '600px',
-        margin: '0 auto',
-        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)'
-    }}>
-        <h2 style={{ color: '#202020', marginBottom: '16px' }}>Neue Nachricht von Ihrer Website</h2>
+    <div
+        style={{
+            fontFamily: 'Segoe UI, Roboto, sans-serif',
+            lineHeight: '1.6',
+            color: '#1a1a1a',
+            backgroundColor: '#ffffff',
+            padding: '32px',
+            borderRadius: '12px',
+            maxWidth: '640px',
+            margin: '0 auto',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+            border: '1px solid #eaeaea',
+        }}
+    >
+        <h1 style={{ color: '#202020', fontSize: '24px', marginBottom: '24px' }}>
+            📩 Neue Nachricht von <span style={{ color: '#4f46e5' }}>Flex Sharing Event</span>
+        </h1>
 
-        <div style={{ marginBottom: '8px' }}>
-            <strong>Name:</strong> {firstName} {lastName}
+        <div style={{ fontSize: '16px', marginBottom: '12px' }}>
+            <strong style={{ width: '100px', display: 'inline-block' }}>👤 Name:</strong>
+            {firstName} {lastName}
         </div>
-        <div style={{ marginBottom: '8px' }}>
-            <strong>E-Mail:</strong> {email}
+
+        <div style={{ fontSize: '16px', marginBottom: '12px' }}>
+            <strong style={{ width: '100px', display: 'inline-block' }}>📧 E-Mail:</strong>
+            {email}
         </div>
-        <div style={{ marginBottom: '8px' }}>
-            <strong>Telefon:</strong> {phone}
+
+        <div style={{ fontSize: '16px', marginBottom: '24px' }}>
+            <strong style={{ width: '100px', display: 'inline-block' }}>📞 Telefon:</strong>
+            {phone}
         </div>
-        <div style={{ marginTop: '24px' }}>
-            <strong>Nachricht:</strong>
-            <p style={{ whiteSpace: 'pre-line', marginTop: '8px' }}>
+
+        <div>
+            <strong style={{ fontSize: '18px', color: '#202020' }}>💬 Nachricht:</strong>
+            <div
+                style={{
+                    backgroundColor: '#f4f4ff',
+                    padding: '16px',
+                    marginTop: '12px',
+                    borderRadius: '8px',
+                    fontSize: '16px',
+                    whiteSpace: 'pre-line',
+                    borderLeft: '4px solid #4f46e5',
+                }}
+            >
                 {message}
-            </p>
+            </div>
         </div>
     </div>
 );
