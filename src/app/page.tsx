@@ -1,5 +1,4 @@
 "use client";
-import Head from 'next/head';
 import { useState, useEffect } from "react";
 import { AnimatePresence } from 'framer-motion';
 import Lenis from "lenis";
@@ -63,41 +62,20 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <Head>
-        <title>Flex Sharing Event</title>
-        <meta name="description" content="Professioneller Bühnen- und Eventbau aus Berlin – wir realisieren maßgeschneiderte Konstruktionen für Konzerte, Festivals, Firmenveranstaltungen und mehr." />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://flex-sharing.de/" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="Flex Sharing Event" />
-        <meta property="og:description" content="Professioneller Bühnen- und Eventbau aus Berlin – wir realisieren maßgeschneiderte Konstruktionen für Konzerte, Festivals, Firmenveranstaltungen und mehr." />
-        <meta property="og:url" content="https://flex-sharing.de/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://flex-sharing.de/images/logo.jpg" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Flex Sharing Event" />
-        <meta name="twitter:description" content="Professioneller Bühnen- und Eventbau aus Berlin – wir realisieren maßgeschneiderte Konstruktionen für Konzerte, Festivals, Firmenveranstaltungen und mehr." />
-        <meta name="twitter:image" content="https://flex-sharing.de/images/logo.jpg" />
-      </Head>
-      <main>
-        <AnimatePresence mode='wait'>
-          {isLoading && <Preloader />}
-        </AnimatePresence>
-        {!isTouchDevice && <Cursor isActive={isCursorActive} />}
-        <Header setCursorIsActive={setCursorIsActive} />
-        <Intro setCursorIsActive={setCursorIsActive} />
-        <Services setCursorIsActive={setCursorIsActive} />
-        <Partner />
-        <Description setCursorIsActive={setCursorIsActive} />
-        <Team setCursorIsActive={setCursorIsActive} />
-        <Blog setCursorIsActive={setCursorIsActive} />
-        <Contact />
-        <Footer />
-      </main>
-    </>
+    <main>
+      <AnimatePresence mode='wait'>
+        {isLoading && <Preloader />}
+      </AnimatePresence>
+      {!isTouchDevice && <Cursor isActive={isCursorActive} />}
+      <Header setCursorIsActive={setCursorIsActive} />
+      <Intro setCursorIsActive={setCursorIsActive} />
+      <Services setCursorIsActive={setCursorIsActive} />
+      <Partner />
+      <Description setCursorIsActive={setCursorIsActive} />
+      <Team setCursorIsActive={setCursorIsActive} />
+      <Blog setCursorIsActive={setCursorIsActive} />
+      <Contact />
+      <Footer />
+    </main>
   );
 }

@@ -15,10 +15,32 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Flex Sharing Event",
-  description: 'Event- und Dienstleistungsagentur in Berlin',
+  title: "Flex Sharing – Bühnen- und Eventbau in Berlin",
+  description: "Professioneller Bühnen- und Eventbau aus Berlin – maßgeschneiderte Konstruktionen für Konzerte, Festivals, Firmenveranstaltungen und mehr.",
+  robots: "index, follow",
   icons: {
-    icon: '/images/logo.png',
+    icon: "/images/logo.png",
+  },
+  openGraph: {
+    title: "Flex Sharing – Eventbau & Konstruktionen",
+    description: "Event- und Bühnenkonstruktionen für Konzerte, Festivals und Firmenveranstaltungen. Flex Sharing – Ihr Partner in Berlin.",
+    url: "https://flex-sharing.de",
+    type: "website",
+    siteName: "Flex Sharing",
+    images: [
+      {
+        url: "https://flex-sharing.de/images/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Flex Sharing Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Flex Sharing – Eventbau in Berlin",
+    description: "Professioneller Bühnen- und Eventbau für Events jeder Größe.",
+    images: ["https://flex-sharing.de/images/logo.jpg"],
   },
 };
 
