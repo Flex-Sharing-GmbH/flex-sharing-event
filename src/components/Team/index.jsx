@@ -29,7 +29,7 @@ export default function Index({ setCursorIsActive }) {
           onMouseLeave={() => setCursorIsActive(false)}
           className="lg:text-[5vw] text-[11.5vw] uppercase mix-blend-difference font-bold"
         >
-          Unsere Team
+          Unser Team
         </p>
       </div>
 

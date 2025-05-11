@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: "Professioneller Bühnen- und Eventbau aus Berlin – maßgeschneiderte Konstruktionen für Konzerte, Festivals, Firmenveranstaltungen und mehr.",
   robots: "index, follow",
   icons: {
-    icon: "/images/logo.png",
+    icon: "/images/logo.jpg",
   },
   openGraph: {
     title: "Flex Sharing – Eventbau & Konstruktionen",
