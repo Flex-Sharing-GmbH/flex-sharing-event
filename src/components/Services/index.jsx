@@ -5,7 +5,6 @@ import {
   FaTruckLoading,
   FaTools,
 } from "react-icons/fa";
-import { useInView } from "react-intersection-observer";
 
 const services = [
   {
@@ -31,14 +30,8 @@ const services = [
 ];
 
 export default function Index({ setCursorIsActive }) {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   return (
     <div
-      ref={ref}
       id="leistungen"
       className="w-full flex flex-col justify-center items-center pt-10 lg:pb-10 pb-6 bg-white text-[#202020]"
     >
@@ -48,39 +41,31 @@ export default function Index({ setCursorIsActive }) {
           Unsere Leistungen
         </h1>
       </div>
-      <div
-        className="flex lg:flex-row flex-col justify-center lg:items-start items-center w-4/5 max-w-4xl transition-opacity duration-1000 ease-in-out"
-        style={{
-          opacity: inView ? 1 : 0,
-          transform: `translateY(${inView ? "0" : "50px"})`,
-          transition: "all 0.7s ease-out",
-        }}
-      >
-        {inView &&
-          services.map((service, index) => (
+      <div className="flex lg:flex-row flex-col justify-center lg:items-start items-center w-4/5 max-w-4xl transition-opacity duration-1000 ease-in-out">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="px-4 flex flex-col justify-center items-center mb-10"
+          >
             <div
-              key={index}
-              className="px-4 flex flex-col justify-center items-center mb-10"
+              onMouseEnter={() => setCursorIsActive(true)}
+              onMouseLeave={() => setCursorIsActive(false)}
+              className="mb-4 text-primary"
             >
-              <div
-                onMouseEnter={() => setCursorIsActive(true)}
-                onMouseLeave={() => setCursorIsActive(false)}
-                className="mb-4 text-primary"
-              >
-                {service.icon}
-              </div>
-              <h2
-                onMouseEnter={() => setCursorIsActive(true)}
-                onMouseLeave={() => setCursorIsActive(false)}
-                className="font-heading text-xl uppercase font-bold mb-2"
-              >
-                {service.title}
-              </h2>
-              <p className="uppercase text-sm font-black text-center opacity-50">
-                {service.description}
-              </p>
+              {service.icon}
             </div>
-          ))}
+            <h2
+              onMouseEnter={() => setCursorIsActive(true)}
+              onMouseLeave={() => setCursorIsActive(false)}
+              className="font-heading text-xl uppercase font-bold mb-2"
+            >
+              {service.title}
+            </h2>
+            <p className="uppercase text-sm font-black text-center opacity-50">
+              {service.description}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );

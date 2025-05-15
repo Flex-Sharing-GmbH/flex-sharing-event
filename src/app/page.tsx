@@ -7,9 +7,11 @@ import Cursor from "@/components/Cursor";
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
 import Services from "@/components/Services";
-import Partner from "@/components/Partner";
+import About from "@/components/About";
 import Description from "@/components/Description";
 import Team from "@/components/Team";
+import People from "@/components/People";
+import Features from "@/components/Features";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -70,9 +72,11 @@ export default function Home() {
       <Header setCursorIsActive={setCursorIsActive} />
       <Intro setCursorIsActive={setCursorIsActive} />
       <Services setCursorIsActive={setCursorIsActive} />
-      <Partner />
+      <About />
       <Description setCursorIsActive={setCursorIsActive} />
       <Team setCursorIsActive={setCursorIsActive} />
+      <People />
+      <Features setCursorIsActive={setCursorIsActive} />
       <Blog setCursorIsActive={setCursorIsActive} />
       <Contact />
       <Footer />

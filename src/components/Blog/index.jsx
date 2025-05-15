@@ -13,20 +13,21 @@ const images = [
   "/images/blog/2.jpg",
   "/images/blog/3.jpg",
   "/images/blog/4.jpg",
+  "/images/blog/5.jpg"
 ];
 
 export default function Index({ setCursorIsActive }) {
   return (
     <div id="blog" className="w-full p-0 bg-white text-[#202020]">
-      <div className="lg:py-20 py-10 flex flex-col items-center justify-center">
+      <div className="py-20 flex flex-col items-center justify-center">
         <div className="lg:w-4/5 w-11/12">
-          <h1
+          <h2
             onMouseEnter={() => setCursorIsActive(true)}
             onMouseLeave={() => setCursorIsActive(false)}
             className="text-4xl lg:text-5xl font-extrabold font-heading lg:mb-13 mb-10"
           >
             Aus unserem Alltag
-          </h1>
+          </h2>
         </div>
 
         <Swiper
@@ -40,7 +41,7 @@ export default function Index({ setCursorIsActive }) {
           spaceBetween={0}
           slidesPerView={1}
           loop={true}
-          className="lg:w-4/5 w-11/12 mb-9"
+          className="lg:w-4/5 w-11/12 mb-9 rounded-2xl"
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>
