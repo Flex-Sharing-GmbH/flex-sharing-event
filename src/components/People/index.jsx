@@ -17,8 +17,13 @@ const teamList = [
     phone: "+49 15679 627181",
   },
   {
-    imageUrl: "/images/team/hleb.jpg",
-    name: "Hleb Hlebov",
+    imageUrl: "/images/team/vyacheslav.png",
+    name: "Vyacheslav Konovchenko",
+    positions: "Ingenieur",
+  },
+  {
+    imageUrl: "/images/team/magomed.png",
+    name: "Magomed Acharayev",
     positions: "Staplerfahrer / Montagemitarbeiter",
   },
   {
@@ -27,14 +32,9 @@ const teamList = [
     positions: "Staplerfahrer / Montagemitarbeiter",
   },
   {
-    imageUrl: "/images/team/magomed.png",
-    name: "Magomed Acharayev",
+    imageUrl: "/images/team/hleb.jpg",
+    name: "Hleb Hlebov",
     positions: "Staplerfahrer / Montagemitarbeiter",
-  },
-  {
-    imageUrl: "/images/team/vyacheslav.png",
-    name: "Vyacheslav Konovchenko",
-    positions: "Ingenieur",
   },
   {
     imageUrl: "/images/team/vitalii.png",
@@ -80,7 +80,7 @@ export default function Index() {
                   className="inline-flex items-center justify-center gap-2 text-sm font-semibold mt-3 px-4 py-2 rounded-full bg-[#202020] text-white hover:bg-[#505050] transition duration-500"
                 >
                   <FaPhoneAlt className="w-4 h-4 text-white" />
-                  Kontaktieren
+                  {phone}
                 </a>
               )}
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Content() {
   return (
@@ -23,7 +24,13 @@ const Section2 = () => {
       <h1 className="text-[7vw] leading-[0.8] mt-10">
         Flex Sharing Event
       </h1>
-      <p>© Copyright by Flex Sharing GmbH</p>
+      <div>
+        <p className="py-1">© Copyright by <b>Flex Sharing GmbH</b></p>
+        <div className="flex items-center">
+          <p>Developed by <b>Mirka Studio</b></p>
+          <Image src="/images/mirka.png" alt="Mirka logo" width={40} height={40} />
+        </div>
+      </div>
     </div>
   );
 };
