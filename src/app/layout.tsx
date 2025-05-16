@@ -24,12 +24,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Flex Sharing – Eventbau & Konstruktionen",
     description: "Event- und Bühnenkonstruktionen für Konzerte, Festivals und Firmenveranstaltungen. Flex Sharing – Ihr Partner in Berlin.",
-    url: "https://flex-sharing.de",
+    url: "https://flexsharing-event.de",
     type: "website",
     siteName: "Flex Sharing",
     images: [
       {
-        url: "https://flex-sharing.de/images/logo.jpg",
+        url: "https://flexsharing-event.de/images/logo.jpg",
         width: 1200,
         height: 630,
         alt: "Flex Sharing Logo",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Flex Sharing – Eventbau in Berlin",
     description: "Professioneller Bühnen- und Eventbau für Events jeder Größe.",
-    images: ["https://flex-sharing.de/images/logo.jpg"],
+    images: ["https://flexsharing-event.de/images/logo.jpg"],
   },
 };
 
