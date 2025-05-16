@@ -22,15 +22,15 @@ const Section1 = () => {
 
 const Section2 = () => {
   return (
-    <div className="flex justify-between items-end">
-      <h1 className="text-[7vw] leading-[0.8] mt-10">
+    <div className="flex lg:justify-between lg:items-end lg:flex-row flex-col justify-center items-end">
+      <h1 className="text-[7vw] leading-[0.8] mt-10 lg:py-0 py-4">
         Flex Sharing Event
       </h1>
       <div>
-        <p className="py-1">© Copyright by <b>Flex Sharing GmbH</b></p>
-        <div className="flex items-center">
-          <p>Developed by <b>Mirka Studio</b></p>
-          <Image src="/images/mirka.png" alt="Mirka logo" width={40} height={40} />
+        <p className="py-1">© Copyright by <b>Flex Sharing Services GmbH</b></p>
+        <div className="flex items-center justify-end">
+          <p className="mr-0.5">Designed & Developed by</p>
+          <Image src="/images/mirka.png" alt="Mirka logo" width={80} height={80} />
         </div>
       </div>
     </div>
