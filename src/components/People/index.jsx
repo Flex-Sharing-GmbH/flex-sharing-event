@@ -24,7 +24,7 @@ const teamList = [
   {
     imageUrl: "/images/team/magomed.png",
     name: "Magomed Acharayev",
-    positions: "Staplerfahrer / Montagemitarbeiter",
+    positions: "Projektleiter",
   },
   {
     imageUrl: "/images/team/michael.png",
