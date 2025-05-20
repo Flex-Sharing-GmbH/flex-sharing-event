@@ -5,7 +5,7 @@ import { slideUp, opacity } from "./animation";
 
 export default function Index({ setCursorIsActive }) {
   const phrase =
-    "Wir realisieren Bauprojekte mit höchster Präzision und Qualität. Von Renovierung bis Neubau – wir setzen Ihre Vision um.";
+    "Wir bieten ebenfalls Monteure für die Montage oder Demontage von Mobile Fahrstraßen an. Besonders gut ausgebildet sind wir was die Montage und Demontage von Aluminiumpanels angeht.";
   const description = useRef(null);
   const isInView = useInView(description);
 
@@ -28,8 +28,8 @@ export default function Index({ setCursorIsActive }) {
           })}
         </p>
         <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>
-          Mit langjähriger Erfahrung und über 30 erfolgreich abgeschlossenen
-          Projekten sind wir Ihr zuverlässiger Partner.
+          Unsere Teams arbeiten schnell, zuverlässig und mit viel Erfahrung –
+          egal ob bei kleinen Einsätzen oder großen Projekten
         </motion.p>
         {/*
         <div data-scroll data-scroll-speed={0.1}>

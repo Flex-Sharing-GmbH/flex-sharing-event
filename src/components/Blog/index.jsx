@@ -13,7 +13,10 @@ const images = [
   "/images/blog/2.jpg",
   "/images/blog/3.jpg",
   "/images/blog/4.jpg",
-  "/images/blog/5.jpg"
+  "/images/blog/5.jpg",
+  "/images/blog/6.jpg",
+  "/images/blog/7.jpg",
+  "/images/blog/8.jpg"
 ];
 
 export default function Index({ setCursorIsActive }) {
