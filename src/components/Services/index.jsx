@@ -4,6 +4,7 @@ import {
   FaMountain,
   FaTruckLoading,
   FaTools,
+  FaRoad
 } from "react-icons/fa";
 
 const services = [
@@ -25,7 +26,12 @@ const services = [
   {
     icon: <FaTools size={70} />,
     title: "MONTAGETEAMS",
-    description: "Professioneller Aufbau von Bühnen und Zelten",
+    description: "Professioneller Aufbau von Bühnen, Zelten und Tribünen",
+  },
+  {
+    icon: <FaRoad size={70} />,
+    title: "STRASSENABSPERRUNGEN",
+    description: "Bauzäune, Polizeigitter und Crash Barriers für Events",
   },
 ];
 
@@ -41,7 +47,7 @@ export default function Index({ setCursorIsActive }) {
           Unsere Leistungen
         </h1>
       </div>
-      <div className="flex lg:flex-row flex-col justify-center lg:items-start items-center w-4/5 max-w-4xl transition-opacity duration-1000 ease-in-out">
+      <div className="flex xl:flex-row flex-col justify-center xl:items-start items-center w-4/5">
         {services.map((service, index) => (
           <div
             key={index}
@@ -57,7 +63,7 @@ export default function Index({ setCursorIsActive }) {
             <h2
               onMouseEnter={() => setCursorIsActive(true)}
               onMouseLeave={() => setCursorIsActive(false)}
-              className="font-heading text-xl uppercase font-bold mb-2"
+              className="font-heading text-xl uppercase text-center font-bold mb-2"
             >
               {service.title}
             </h2>
