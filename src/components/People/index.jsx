@@ -29,17 +29,17 @@ const teamList = [
   {
     imageUrl: "/images/team/michael.png",
     name: "Michael Blum",
-    positions: "Teamleiter | Ost und West",
+    positions: "Teamleiter | Ost",
   },
   {
     imageUrl: "/images/team/hleb.jpg",
     name: "Hleb Hlebov",
-    positions: "Teamleiter | Süd",
+    positions: "Teamleiter | West",
   },
   {
     imageUrl: "/images/team/vitalii.png",
     name: "Vitalii Sierokurov",
-    positions: "Montagemitarbeiter",
+    positions: "Teamleiter | Süd",
   },
 ];
 
