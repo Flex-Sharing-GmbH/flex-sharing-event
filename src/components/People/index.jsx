@@ -29,12 +29,12 @@ const teamList = [
   {
     imageUrl: "/images/team/michael.png",
     name: "Michael Blum",
-    positions: "Staplerfahrer / Montagemitarbeiter",
+    positions: "Teamleiter | Ost und West",
   },
   {
     imageUrl: "/images/team/hleb.jpg",
     name: "Hleb Hlebov",
-    positions: "Staplerfahrer / Montagemitarbeiter",
+    positions: "Teamleiter | Süd",
   },
   {
     imageUrl: "/images/team/vitalii.png",
