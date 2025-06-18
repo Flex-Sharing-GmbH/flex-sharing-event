@@ -3,7 +3,7 @@ import {
   FaGlobe,
   FaHandshake,
   FaClock,
-  FaUsers,
+  FaUsers
 } from "react-icons/fa";
 
 const featureList = [
@@ -36,7 +36,7 @@ const featureList = [
     title: "Eingespielte Teams",
     description:
       "Schnelle, reibungslose Projektumsetzung durch eingespielte Montageeinheiten.",
-  },
+  }
 ];
 
 export default function Index({ setCursorIsActive }) {

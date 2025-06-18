@@ -4,7 +4,8 @@ import {
   FaMountain,
   FaTruckLoading,
   FaTools,
-  FaRoad
+  FaRoad,
+  FaTruck
 } from "react-icons/fa";
 
 const services = [
@@ -33,6 +34,11 @@ const services = [
     title: "STRASSENABSPERRUNGEN",
     description: "Bauzäune, Polizeigitter und Crash Barriers für Events",
   },
+  {
+    icon: <FaTruck size={70} />,
+    title: "Logistik",
+    description: "Unsere Eventlogistiker sorgen für reibungslose Eventabläufe",
+  }
 ];
 
 export default function Index({ setCursorIsActive }) {
@@ -47,11 +53,11 @@ export default function Index({ setCursorIsActive }) {
           Unsere Leistungen
         </h1>
       </div>
-      <div className="flex xl:flex-row flex-col justify-center xl:items-start items-center w-4/5">
+      <div className="flex xl:flex-row flex-col flex-wrap justify-center xl:items-start items-center w-4/5">
         {services.map((service, index) => (
           <div
             key={index}
-            className="px-4 flex flex-col justify-center items-center mb-10"
+            className="px-4 flex flex-col justify-center items-center mb-10 max-w-1/4"
           >
             <div
               onMouseEnter={() => setCursorIsActive(true)}

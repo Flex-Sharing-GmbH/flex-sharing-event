@@ -17,11 +17,6 @@ const teamList = [
     phone: "+49 15679 627181",
   },
   {
-    imageUrl: "/images/team/vyacheslav.png",
-    name: "Vyacheslav Konovchenko",
-    positions: "Ingenieur",
-  },
-  {
     imageUrl: "/images/team/magomed.png",
     name: "Magomed Acharayev",
     positions: "Projektleiter",
